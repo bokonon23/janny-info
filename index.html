@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>$JANNY — 4chan's OG Janitor · He Does It For Free</title>
+  <meta name="description" content="$JANNY is the original 4chan 'Janitor – He Does It For Free' meme, reborn as an Ethereum ERC-20. 3.14B supply, renounced contract, hourly burn.">
+  <meta name="theme-color" content="#095a0b">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="$JANNY">
+  <meta property="og:title" content="$JANNY — 4chan's OG Janitor">
+  <meta property="og:description" content="He Does It For Free. The original 4chan Janitor meme as an Ethereum token. 3.14B supply, renounced, hourly burn.">
+  <meta property="og:url" content="https://janny.info/">
+  <meta property="og:image" content="https://janny.info/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jannycoineth">
+  <meta name="twitter:title" content="$JANNY — 4chan's OG Janitor">
+  <meta name="twitter:description" content="He Does It For Free. 3.14B supply, renounced, hourly burn.">
+  <meta name="twitter:image" content="https://janny.info/assets/img/og-image.jpg">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/img/logo.jpg">
+
+  <!-- Preload hero poster -->
+  <link rel="preload" as="image" href="assets/img/og-image.jpg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="nav__brand" aria-label="$JANNY home">
+    <img src="assets/img/logo.jpg" alt="$JANNY logo" width="48" height="48">
+    <span>$JANNY</span>
+  </a>
+  <nav>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#contract">Contract</a></li>
+      <li><a href="#token">Token</a></li>
+      <li id="gallery-nav" hidden><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/og-image.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay">
+      <h1 class="hero__title">$JANNY</h1>
+      <p class="hero__tag">He Does it for Free</p>
+      <img class="hero__characters" src="assets/img/characters.gif" alt="Janny meme character strip" width="728" height="90">
+      <a class="hero__cta" href="#contract">View Contract ↓</a>
+    </div>
+  </section>
+
+  <section id="contract" class="contract">
+    <img class="contract__portrait" src="assets/img/janny-portrait.jpg" alt="Janny dog with sunglasses on dollar sign background" width="512" height="512" loading="lazy">
+
+    <h2 class="contract__ticker">Ticker: $JANNY</h2>
+
+    <div class="contract__price" id="price-widget" hidden>
+      <div class="price__row"><span class="price__label">Price</span><span class="price__value" data-field="price">—</span></div>
+      <div class="price__row"><span class="price__label">Market Cap</span><span class="price__value" data-field="mcap">—</span></div>
+      <div class="price__row"><span class="price__label">24h</span><span class="price__value" data-field="change">—</span></div>
+      <a class="price__chart" href="https://dexscreener.com/ethereum/0x5ff46696d6e4896137acb1628b06e28c10ee9634" target="_blank" rel="noopener">View chart on Dexscreener →</a>
+    </div>
+
+    <h3 class="contract__addr-label">CONTRACT ADDRESS</h3>
+    <div class="contract__addr">
+      <code id="contract-address">0x5ff46696d6e4896137acb1628b06e28c10ee9634</code>
+      <button type="button" id="copy-btn" class="btn btn--copy" aria-label="Copy contract address">
+        <span class="copy__icon" aria-hidden="true">⧉</span>
+        <span class="copy__text">Copy</span>
+      </button>
+    </div>
+
+    <ul class="socials" role="list">
+      <li><a href="https://t.me/jannycoineth" target="_blank" rel="noopener" aria-label="Telegram"><span aria-hidden="true">✈</span> Telegram</a></li>
+      <li><a href="https://x.com/jannycoineth" target="_blank" rel="noopener" aria-label="X / Twitter"><span aria-hidden="true">𝕏</span> Twitter</a></li>
+      <li><a href="https://app.uniswap.org/explore/tokens/ethereum/0x5ff46696d6e4896137acb1628b06e28c10ee9634" target="_blank" rel="noopener" aria-label="Uniswap"><span aria-hidden="true">🦄</span> Uniswap</a></li>
+      <li><a href="https://etherscan.io/token/0x5ff46696d6e4896137acb1628b06e28c10ee9634" target="_blank" rel="noopener" aria-label="Etherscan"><span aria-hidden="true">⌬</span> Etherscan</a></li>
+      <li><a href="https://dexscreener.com/ethereum/0x5ff46696d6e4896137acb1628b06e28c10ee9634" target="_blank" rel="noopener" aria-label="Dexscreener"><span aria-hidden="true">📈</span> Dexscreener</a></li>
+      <li><a href="mailto:contact@janny.info" aria-label="Email"><span aria-hidden="true">✉</span> Email</a></li>
+    </ul>
+  </section>
+
+  <section class="feature">
+    <video class="feature__video" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/video/janny-hotpockets.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section id="gallery" class="gallery" hidden>
+    <h2 class="section__title">Meme Gallery</h2>
+    <div class="gallery__grid" id="gallery-grid"></div>
+  </section>
+
+  <section id="token" class="token">
+    <h2 class="section__title">Token</h2>
+    <ul class="token__list">
+      <li><strong>3.14 Billion $JANNY</strong> created at genesis on May 8<sup>th</sup> 2024.</li>
+      <li><strong>95%</strong> added to the Uniswap v2 pool — all opening V2 LP tokens were <strong>BURNT</strong>.</li>
+      <li>Contract <strong>RENOUNCED</strong>.</li>
+      <li><strong>5%</strong> retained for marketing plus exchange listings.</li>
+      <li><strong>1%</strong> sent to Vitalik for stray-dog shelter. <a href="https://etherscan.io/tx/" target="_blank" rel="noopener">See here</a>.</li>
+      <li><strong>Buy / Sell tax = 0 / 0.9%</strong> — used as follows:
+        <ul>
+          <li><strong>50%</strong> <em>automatically</em> goes back into the liquidity pool, replenishing V2 ETH-side liquidity. Better liquidity — good.</li>
+          <li><strong>50%</strong> for further liquidity use or marketing — ad campaigns, trending, artwork, etc.</li>
+        </ul>
+      </li>
+      <li>The Janny contract has an innovative <strong>burn mechanism</strong>: once every hour in which a trade is executed, <strong>0.1%</strong> of the $JANNY tokens in the pool are burnt, creating a <strong>deflationary</strong> effect. Clever $Janny.</li>
+    </ul>
+    <img class="token__strip" src="assets/img/characters.jpg" alt="Janny meme characters" width="300" height="99" loading="lazy">
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section__title">About Janny</h2>
+    <ul class="about__list">
+      <li>The <em>"Janitor — He Does It For Free"</em> meme originated on 4chan. Janny refers to "Janitors" or "Jannies".</li>
+      <li>Janny memes often reference <em>"He does it for free"</em> — the unpaid efforts of an internet moderator.</li>
+      <li>Jannies can be tetchy and pedantic, <strong>but</strong> they are also the responsible, UNPAID and unsung heroes that clean up other people's mess.</li>
+      <li>Janny is an established meme on 4chan, where it is widely used. For the full background, see <a href="https://knowyourmeme.com/memes/janny" target="_blank" rel="noopener">Know Your Meme</a>.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <img src="assets/img/logo.jpg" alt="" width="48" height="48" loading="lazy">
+  <p>$JANNY · He Does It For Free · <span id="year"></span></p>
+  <p class="foot__disclaimer">$JANNY is a community meme coin with no intrinsic value or expectation of financial return. Nothing on this site is financial advice.</p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden>Copied!</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
