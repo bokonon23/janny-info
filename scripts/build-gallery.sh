@@ -12,11 +12,8 @@ mkdir -p "$DIR"
 {
   printf '['
   first=1
-  # portable: avoid `shopt -s nullglob`
-  for f in "$DIR"/*.jpg "$DIR"/*.jpeg "$DIR"/*.png "$DIR"/*.gif "$DIR"/*.webp; do
-    [ -e "$f" ] || continue
-    name="$(basename "$f")"
-    [ "$name" = "manifest.json" ] && continue
+  # natural-sort filenames so meme-2 < meme-10 < meme-100
+  ls "$DIR" | grep -iE '\.(jpe?g|png|gif|webp)$' | grep -v '^manifest\.json$' | sort -V | while IFS= read -r name; do
     if [ $first -eq 1 ]; then first=0; else printf ','; fi
     printf '"%s"' "$name"
   done
